@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StickMe</string>
+    <string name="set_your_note">Set your note</string>
+    <string name="enter_a_todo">Enter a TODO</string>
+    <string name="save_button">save Button</string>
+    <string name="b">B</string>
+    <string name="i">I</string>
+    <string name="underline">⫒</string>
+    <string name="font_size_reducer">-</string>
+    <string name="fontSizeIncrease">+</string>
+    <string name="_12">12</string>
+</resources>

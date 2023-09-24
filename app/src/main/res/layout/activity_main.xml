@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:id="@+id/Edit"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:autofillHints="wake up early"
+        android:hint="@string/enter_a_todo"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_color"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FABSave"
+        android:layout_above="@+id/LL2"
+        android:layout_alignParentEnd="true"
+        android:onClick="saveButton"
+        app:tint="@color/white"
+        android:backgroundTint="@color/fab_color"
+        android:src="@drawable/ic_save_icon"
+        android:contentDescription="@string/save_button" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LL2"
+        android:layout_toStartOf="@+id/FABSave"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="3"
+        android:layout_toLeftOf="@+id/FABSave" >
+
+
+
+    <Button
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="20sp"
+        android:text="@string/font_size_reducer"
+        android:onClick="fontSizeReducer"
+        android:id="@+id/fontSizeReducer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/TVSize"
+        />
+
+    <Button
+        android:id="@+id/fontSizeIncrease"
+        android:layout_width="8dp"
+        android:paddingLeft="20sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="fontSizeIncrease"
+        android:text="@string/fontSizeIncrease"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL2"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+    </LinearLayout>
+
+
+</RelativeLayout>
